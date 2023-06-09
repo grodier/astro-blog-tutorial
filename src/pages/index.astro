@@ -7,4 +7,16 @@ let pageTitle = "Home Page";
 <BaseLayout pageTitle={pageTitle}>
   <h2>My awesome blog subtitle</h2>
   <Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
+  <ul>
+    <li><a href="/blocking-client-script">Client Script</a></li>
+    <li><a href="/uncanny-inline-defer-script">Inline Defer Script</a></li>
+    <li><a href="/uncanny-inline-sync-script">Inline Sync Script</a></li>
+    <li>
+      <a href="/uncanny-inline-module-block-script"
+        >Inline Module Block Script</a>
+    </li>
+    <li>
+      <a href="/uncanny-inline-module-file-script">Inline module file Script</a>
+    </li>
+  </ul>
 </BaseLayout>
