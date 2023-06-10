@@ -1,0 +1,9 @@
+---
+import TestLayout from "../layouts/TestLayout.astro";
+let pageTitle = "Inline Async Script";
+---
+
+<TestLayout pageTitle={pageTitle}>
+  <a href="/">Home</a>
+  <script is:inline async src="/test.js"></script>
+</TestLayout>
